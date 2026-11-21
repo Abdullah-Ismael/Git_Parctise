@@ -1,0 +1,76 @@
+:root {
+  --bg: #e9eef2;
+  --ink: #17212b;
+  --line: #c5d0d9;
+  --accent: #0b6e69;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 56px 20px;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, sans-serif;
+}
+
+.app { max-width: 460px; margin: 0 auto; }
+
+h1 {
+  margin: 0 0 24px;
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  letter-spacing: -0.01em;
+}
+
+form { display: flex; gap: 8px; margin-bottom: 8px; }
+
+input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 2px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover { filter: brightness(1.15); }
+
+input:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 2px;
+}
+
+ul { list-style: none; margin: 0; padding: 0; }
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 2px;
+  border-bottom: 1px solid var(--line);
+}
+
+
+/* ===== Feature: done ===== */
+/* ===== end done ===== */
+
+
+
+/* ===== Feature: delete ===== */
+/* ===== end delete ===== */
