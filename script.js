@@ -42,6 +42,16 @@ form.addEventListener("submit", (event) => {
 
 
 // ===== Feature: delete =====
+itemHooks.push((li, todo, index) => {
+  const button = document.createElement("button");
+  button.textContent = "Delete";
+  button.className = "delete-btn";
+  button.addEventListener("click", () => {
+    todos.splice(index, 1);
+    render();
+  });
+  li.appendChild(button);
+});
 // ===== end delete =====
 
 
