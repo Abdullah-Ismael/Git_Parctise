@@ -30,6 +30,13 @@ form.addEventListener("submit", (event) => {
 
 
 // ===== Feature: done =====
+// itemHooks.push((li, todo) => {
+  li.classList.toggle("done", todo.done);
+  li.querySelector("span").addEventListener("click", () => {
+    todo.done = !todo.done;
+    render();
+  });
+});
 // ===== end done =====
 
 
