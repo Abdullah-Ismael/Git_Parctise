@@ -78,4 +78,9 @@ li span { cursor: pointer; }
 
 
 /* ===== Feature: delete ===== */
+.delete-btn {
+  background: #b42318;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+}
 /* ===== end delete ===== */
