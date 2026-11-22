@@ -52,6 +52,7 @@ itemHooks.push((li, todo, index) => {
   });
   li.appendChild(button);
 });
+button.setAttribute("aria-label", "Delete " + todo.text);
 // ===== end delete =====
 
 
