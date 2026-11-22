@@ -68,6 +68,10 @@ li {
 
 
 /* ===== Feature: done ===== */
+.done span {
+  text-decoration: line-through;
+  opacity: 0.55;
+}
 /* ===== end done ===== */
 
 
