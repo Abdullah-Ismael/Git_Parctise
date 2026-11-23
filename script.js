@@ -11,7 +11,7 @@ function render() {
   list.innerHTML = "";
   todos.forEach((todo, index) => {
     const li = document.createElement("li");
-    const text = document.createElement("span");
+    const txt = document.createElement("span");
     text.textContent = todo.text;
     li.appendChild(text);
     itemHooks.forEach((hook) => hook(li, todo, index));
