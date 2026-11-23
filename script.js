@@ -31,7 +31,7 @@ form.addEventListener("submit", (event) => {
 
 
 // ===== Feature: done =====
-// itemHooks.push((li, todo) => {
+itemHooks.push((li, todo) => {
   li.classList.toggle("done", todo.done);
   li.querySelector("span").addEventListener("click", () => {
     todo.done = !todo.done;
@@ -47,14 +47,19 @@ itemHooks.push((li, todo, index) => {
   const button = document.createElement("button");
   button.textContent = "Delete";
   button.className = "delete-btn";
+  button.setAttribute("aria-label", "Delete " + todo.text);
   button.addEventListener("click", () => {
     todos.splice(index, 1);
     render();
   });
   li.appendChild(button);
 });
-button.setAttribute("aria-label", "Delete " + todo.text);
 // ===== end delete =====
 
+
+document.querySelector("#clear-all").addEventListener("click", () => {
+  todos = [];
+  render();
+});
 
 render();
