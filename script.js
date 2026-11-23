@@ -25,6 +25,7 @@ form.addEventListener("submit", (event) => {
   if (!text) return;
   todos.push({ text: text, done: false });
   input.value = "";
+  input.focus();
   render();
 });
 
