@@ -25,6 +25,10 @@ form.addEventListener("submit", (event) => {
   if (!text) return;
   todos.push({ text: text, done: false });
   input.value = "";
+	document.querySelector("#clear-all").addEventListener("click", () => {
+  	todos = [];
+  	render();
+	});
   render();
 });
 
